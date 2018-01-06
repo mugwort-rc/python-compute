@@ -2,7 +2,7 @@
 
 Boost.Compute wrapped by Boost.Python
 
-```python.console
+```pycon
 >>> import compute
 >>> compute.system.default_device().name()
 'GeForce GTX 1050'
@@ -18,12 +18,6 @@ Boost.Compute wrapped by Boost.Python
 64
 >>> compute.system.default_device().global_memory_size()
 2093023232
->>> compute.system.default_device().global_memory_size() / 1024
-2043968.0
->>> compute.system.default_device().global_memory_size() / 1024 / 1024
-1996.0625
->>> compute.system.default_device().global_memory_size() / 1024 / 1024 / 1024
-1.94927978515625
 >>> compute.system.default_device().local_memory_size()
 49152
 >>> compute.system.default_device().clock_frequency()
